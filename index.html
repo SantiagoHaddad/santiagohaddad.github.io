@@ -3,84 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            padding: 50px 20px;
-            background-color: #fff;
-        }
-        nav {
-            margin-top: 20px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .section {
-            padding: 80px 20px;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px 0;
-        }
-        footer {
-            padding: 30px;
-            background-color: #fff;
-        }
-    </style>
+    <title>Santiago Haddad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre-mi.css">
+    <link rel="stylesheet" href="fotografia.css">
+
 </head>
 <body>
     <header>
-        <h1>Tu Nombre</h1>
-        <p>Director & Fotógrafo</p>
+        <h1 style="color:white">Santiago Haddad</h1>
+        <p style="color:white">Director & Fotógrafo</p>
         <nav>
             <a href="peliculas.html">Películas</a>
             <a href="fotografia.html">Fotografía</a>
-            <a href="sobremi.html">Sobre Mí</a>
+            <a href="sobre-mi.html">Sobre Mí</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
-    <section id="peliculas" class="section">
-        <h2>Películas</h2>
-        <div class="gallery">
-            <img src="tupelicula1.jpg" alt="Película 1">
-            <img src="tupelicula2.jpg" alt="Película 2">
+    <div class="container">
+        <div class="imagen">
+            <img src="sobre-mi.jpg" alt="Foto de Santiago Haddad" class="foto">
         </div>
-    </section>
-
-    <section id="fotografia" class="section">
-        <h2>Fotografía</h2>
-        <div class="gallery">
-            <img src="tufoto1.jpg" alt="Foto 1">
-            <img src="tufoto2.jpg" alt="Foto 2">
+        <div class="texto">
+            <p>
+                Nací en Salta, Argentina. A los 18 años me mudé a Buenos Aires para inscribirme en la Universidad del Cine y desde entonces me dedico al desarrollo de mis proyectos cinematográficos y literarios. También me dedico al diseño de sonido.  
+                
+                He dirigido tres cortometrajes: <strong>El patio</strong> (2020), ganador de la Mención Especial del Jurado en PLATÓ y finalista argentino de FACIUNI; <strong>Sarfo</strong> (2023), documental que sigue a un caballo de carreras; y en 2023 dirigí y produje <strong>Río Blanco (2024)</strong>, un cortometraje de ficción que sigue a un cazador durante una tormenta en un cerro, gracias al apoyo del fondo de fomento IDEA de la provincia de Salta. Fue ganador de la Competencia Iberoamericana de Cortometrajes de FIC.UBA.  
+        
+                En este momento me encuentro desarrollando mi primer largometraje. En este sitio podrán ver fragmentos de mis trabajos, links a sitios de interés personal, así como imágenes y textos de mi autoría.
+            </p>
         </div>
-    </section>
-
-    <section id="sobre-mi" class="section">
-        <h2>Sobre Mí</h2>
-        <p>Breve descripción sobre tu trayectoria y estilo.</p>
-    </section>
+    </div>
 
     <section id="contacto" class="section">
         <h2>Contacto</h2>
-        <p>Email: tuemail@example.com</p>
-        <p>Redes Sociales: @tuusuario</p>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="https://duyn491kcolsw.cloudfront.net/files/36/36l/36lve3.svg?ph=c2a75f31a2" alt="Teléfono">
+                <h3>(+54) 387 5764 008</h3>
+            </div>
+            <div class="contact-item">
+                <img src="https://duyn491kcolsw.cloudfront.net/files/3z/3z2/3z2m9w.svg?ph=c2a75f31a2" alt="Email">
+                <h3><a href="mailto:santiago.haddad2@gmail.com">santiago.haddad2@gmail.com</a></h3>
+            </div>
+            <div class="contact-item">
+                <img src="https://duyn491kcolsw.cloudfront.net/files/0j/0jk/0jk3ih.svg?ph=c2a75f31a2" alt="Instagram">
+                <h3><a href="https://www.instagram.com/santiagodhaddad/" target="_blank">@santiagodhaddad</a></h3>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Tu Nombre - Todos los derechos reservados</p>
+        <p>&copy; 2025 Santiago Haddad - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>

@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Películas - Santiago Haddad</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mis fotografías - Santiago Haddad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fotografia.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
-        <h1>Películas</h1>
+        <h1>Mis fotografías</h1>
         <nav>
-            <a href="index.html">INICIO</a>
+            <a href="peliculas.html">Películas</a>
             <a href="fotografia.html">Fotografía</a>
             <a href="sobre-mi.html">Sobre Mí</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <section class="section">
-        <h2>Mis Películas</h2>
-        <div class="gallery">
-            <img src="tupelicula1.jpg" alt="Película 1">
-            <img src="tupelicula2.jpg" alt="Película 2">
+        <div class="gallery-container">
+            <div class="gallery-section">
+                <h2>Cachi</h2>
+                <div class="gallery">
+                    <img src="cachi1.jpg" alt="Cachi 1" onclick="openLightbox(this)">
+                    <img src="cachi2.jpg" alt="Cachi 2" onclick="openLightbox(this)">
+                    <img src="cachi3.jpg" alt="Cachi 3" onclick="openLightbox(this)">
+                    <img src="cachi4.jpg" alt="Cachi 4" onclick="openLightbox(this)">
+                    <img src="cachi5.jpg" alt="Cachi 5" onclick="openLightbox(this)">
+                </div>
+            </div>
+        
+            <div class="gallery-section">
+                <h2>ByN</h2>
+                <div class="gallery">
+                    <img src="byn1.jpg" alt="ByN 1" onclick="openLightbox(this)">
+                    <img src="byn2.jpg" alt="ByN 2" onclick="openLightbox(this)">
+                    <img src="byn3.jpg" alt="ByN 3" onclick="openLightbox(this)">
+                    <img src="byn4.jpg" alt="ByN 4" onclick="openLightbox(this)">
+                    <img src="byn5.jpg" alt="ByN 5" onclick="openLightbox(this)">
+                </div>
+            </div>
+        </div>
+        
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" class="lightbox-img">
         </div>
     </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="https://duyn491kcolsw.cloudfront.net/files/36/36l/36lve3.svg?ph=c2a75f31a2" alt="Teléfono">
+                <h3>(+54) 387 5764 008</h3>
+            </div>
+            <div class="contact-item">
+                <img src="https://duyn491kcolsw.cloudfront.net/files/3z/3z2/3z2m9w.svg?ph=c2a75f31a2" alt="Email">
+                <h3><a href="mailto:santiago.haddad2@gmail.com">santiago.haddad2@gmail.com</a></h3>
+            </div>
+            <div class="contact-item">
+                <img src="https://duyn491kcolsw.cloudfront.net/files/0j/0jk/0jk3ih.svg?ph=c2a75f31a2" alt="Instagram">
+                <h3><a href="https://www.instagram.com/santiagodhaddad/" target="_blank">@santiagodhaddad</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openLightbox(img) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+    
+            lightboxImg.src = img.src;
+            lightbox.classList.add("active");
+        }
+    
+        function closeLightbox() {
+            document.getElementById("lightbox").classList.remove("active");
+        }
+    </script>
+
 </body>
 </html>
